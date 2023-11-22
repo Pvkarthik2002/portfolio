@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/599b9a83d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p><span>P V </span>KARTHIK</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="first">
+                <div class="header-text">
+                    <p>Front-end Web Developer (<span>Fresher</span>)</p>
+                    <h1>Hi, I am <span>P V Karthik</span> from India</h1>
+                
+                </div>
+                <img src="firstimg.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------about------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myimgabout.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p></p>Greetings! I'm P V Karthik, an ambitious undergraduate student passionate about software development and innovation. Here's a glimpse into my journey and what fuels my enthusiasm for the world of coding</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('industrial')">Industrial Exposure</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Experience in creating responsive and dynamic web applications using HTML, CSS and Javascript.
+                            </li>
+                            <li><span>Programming Languages</span><br>Proficient in JAVA and Python.
+                            </li>
+                            <li><span>Problem-Solving</span><br>I thrive on working with complex problems and finding innovative solutions.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="industrial">
+                        <ul>
+                            <li><span>All India Radio (A.I.R)</span><br>Gained knowledge of the Studio Unit. Succeeded in learning about the Transmitter and how the transmission is done.</li>
+                            <li><span>Infosys Springboard</span><br>Completed online internship training on "Introduction to Python" course.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Electronics and Communication Engineering</span><br>ANITS, Visakhapatanam (2020-2024)</li>
+                            <li><span>12th Standard CBSE</span><br>MP and EV English Medium School (2017-2019)</li>
+                            <li><span>10th Standard CBSE</span><br>Narayana English Medium School (2017-pass out)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------services------------------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Text to Speech Converter</h2>
+                    <p>The objective of this project is to convert the text into voice with the click of a button. This creates a text area and a button in the HTML, styles using CSS, and then uses JavaScript to add an event listener to the button that converts the text in the text area to speech when the button is clicked.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-charging-station"></i>
+                    <h2>Arduino based Smartphone Charging Controller</h2>
+                    <p>This project can be help full to control the charging time and once the time is up, the power to the charging adapter is disconnected.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>DBSE Monitor: Drowsiness, Blindspot & Emotion Monitor Using Jetson Nano (Final Year Project)</h2>
+                    <p>Drowsiness, emotion and attention monitor for driving. Detects objects in blindspots. The two webcams serve as the main sensors to carry out Computer Vision and Pytorch [identifies] faces and eyes for one application and objects for thr other application</p>
+                
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Certificatons</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="nptelimg.jpg" alt="">
+                <div class="layer">
+                    <h3>‘The Joy of Computing using Python’ in NPTEL</h3>
+                    <a href="https://drive.google.com/file/d/1dKTD3L0MrqTdfsPt66flGqr6QQtG61Rx/view?usp=drive_link" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="epamimg.png" alt="">
+                <div class="layer">
+                    <h3>JAVA certificate on completion by EPAM</h3>
+                    <a href="https://drive.google.com/file/d/1aPaPA7gqGcJDNJac155kQdZ1PP-5AoQB/view?usp=sharing" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="wiproimg.png" alt="">
+                <div class="layer">
+                    <h3>Wipro TalentNext Java Full Stack Certification</h3>
+                    <a href="https://drive.google.com/file/d/1oOQndUqk23Kos17TjjqGuIZlkyn4sUsT/view?usp=sharing" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-------------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>pvenkatakarthik.20.ece@anits.edu.in</p>
+                <p><i class="fa-solid fa-phone"></i>8790429335</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="PIDAPARTHI_VENKATA KARTHIK_Resume_26-10-2023-21-08-58.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ karthik</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }   
+
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+    $(document).click(function() {
+        sidemenu.style.right="-200px";
+});
+</script>
+
+
+
+</body>
+</html>
